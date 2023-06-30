@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulario com interação JS</h1>
+    <form action="" autocomplete="on" method="post">
+        <p>
+            <label for="in1"></label>Número 1:
+            <input type="number" name="numero1" id="in1" minlength="0" maxlength="50" oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+        </p>
+        <p>
+            <label for="in2"></label>Número 2:
+            <input type="number" name="numero2" id="in2" minlength="0" maxlength="50" oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+        </p>
+        <p>
+            <label for="isoma">Soma:</label>
+            <output id="isoma">0</output>
+        </p>
+        <p>
+            <input type="submit" value="enviar" onclick="resultado()">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    <script>
+    </script>
+</body>
+</html>
